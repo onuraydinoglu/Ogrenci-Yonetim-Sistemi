@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3907D50D-E94C-4B27-95C2-8ED05FA6989B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VTYS</RootNamespace>
+    <AssemblyName>VTYS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Memurlar\MemurAnaSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memurlar\MemurAnaSayfasi.Designer.cs">
+      <DependentUpon>MemurAnaSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Memurlar\MemurGirisSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memurlar\MemurGirisSayfasi.Designer.cs">
+      <DependentUpon>MemurGirisSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciler\OgrenciAnaSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenciler\OgrenciAnaSayfasi.Designer.cs">
+      <DependentUpon>OgrenciAnaSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciler\OgrenciNotlarSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenciler\OgrenciNotlarSayfasi.Designer.cs">
+      <DependentUpon>OgrenciNotlarSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciler\OgrenciDerseKayitOlma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenciler\OgrenciDerseKayitOlma.Designer.cs">
+      <DependentUpon>OgrenciDerseKayitOlma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciler\OgrenciGirisSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenciler\OgrenciGirisSayfasi.Designer.cs">
+      <DependentUpon>OgrenciGirisSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciler\OgrenciKayitliDersler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenciler\OgrenciKayitliDersler.Designer.cs">
+      <DependentUpon>OgrenciKayitliDersler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciler\OgrenciKayitliTumDersler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenciler\OgrenciKayitliTumDersler.Designer.cs">
+      <DependentUpon>OgrenciKayitliTumDersler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciler\OgrenciTranskript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenciler\OgrenciTranskript.Designer.cs">
+      <DependentUpon>OgrenciTranskript.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogretmenler\OgretmenAnaSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogretmenler\OgretmenAnaSayfasi.Designer.cs">
+      <DependentUpon>OgretmenAnaSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogretmenler\OgretmenGirisSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogretmenler\OgretmenGirisSayfasi.Designer.cs">
+      <DependentUpon>OgretmenGirisSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogretmenler\OgretmenNotGirisSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogretmenler\OgretmenNotGirisSayfasi.Designer.cs">
+      <DependentUpon>OgretmenNotGirisSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogretmenler\OgretmenOnayaGonderilenDersler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogretmenler\OgretmenOnayaGonderilenDersler.Designer.cs">
+      <DependentUpon>OgretmenOnayaGonderilenDersler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogretmenler\OgretmenProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogretmenler\OgretmenProfil.Designer.cs">
+      <DependentUpon>OgretmenProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="otomasyonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>otomasyonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlbaglantisi.cs" />
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memurlar\MemurAnaSayfasi.resx">
+      <DependentUpon>MemurAnaSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memurlar\MemurGirisSayfasi.resx">
+      <DependentUpon>MemurGirisSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenciler\OgrenciAnaSayfasi.resx">
+      <DependentUpon>OgrenciAnaSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenciler\OgrenciNotlarSayfasi.resx">
+      <DependentUpon>OgrenciNotlarSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenciler\OgrenciDerseKayitOlma.resx">
+      <DependentUpon>OgrenciDerseKayitOlma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenciler\OgrenciGirisSayfasi.resx">
+      <DependentUpon>OgrenciGirisSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenciler\OgrenciKayitliDersler.resx">
+      <DependentUpon>OgrenciKayitliDersler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenciler\OgrenciKayitliTumDersler.resx">
+      <DependentUpon>OgrenciKayitliTumDersler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenciler\OgrenciTranskript.resx">
+      <DependentUpon>OgrenciTranskript.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogretmenler\OgretmenAnaSayfasi.resx">
+      <DependentUpon>OgretmenAnaSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogretmenler\OgretmenGirisSayfasi.resx">
+      <DependentUpon>OgretmenGirisSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogretmenler\OgretmenNotGirisSayfasi.resx">
+      <DependentUpon>OgretmenNotGirisSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogretmenler\OgretmenOnayaGonderilenDersler.resx">
+      <DependentUpon>OgretmenOnayaGonderilenDersler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogretmenler\OgretmenProfil.resx">
+      <DependentUpon>OgretmenProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="otomasyonDataSet.xsc">
+      <DependentUpon>otomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="otomasyonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>otomasyonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="otomasyonDataSet.xss">
+      <DependentUpon>otomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
