@@ -74,3 +74,6 @@ This desktop application is designed to manage student, teacher, and administrat
 
 ## About the Project
 This project is designed to meet the fundamental needs of educational institutions, featuring a user-friendly interface, robust security, and comprehensive management capabilities.
+
+## Summary
+This system is a desktop application designed to manage student, teacher, and administrative operations for an educational institution. It utilizes **C#**, **.NET Framework**, **Windows Forms**, **SQL Server**, and **ADO.NET**. The project includes CRUD (Create, Read, Update, Delete) operations, separate login screens for different user types, a user authentication system, and role-based access control.
